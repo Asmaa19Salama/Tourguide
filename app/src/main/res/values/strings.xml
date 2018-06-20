@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Tourguide</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="boat">Boat sightseeing</string>
+
+    <string name="cityHall">Stockholm City Hall</string>
+
+    <string name="restaurants">Open-air restaurants</string>
+
+    <string name="vasa">Vasa museum</string>
+</resources>
