@@ -11,13 +11,13 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import java.util.ArrayList;
+import java.util.List;
 
 public class PlaceAdapter extends ArrayAdapter<Place> {
 
     private int colorId;
 
-    public PlaceAdapter(Context context, ArrayList<Place> place, int colorId) {
+    public PlaceAdapter(Context context, List<Place> place, int colorId) {
         super(context, 0, place);
         this.colorId = colorId;
     }
@@ -31,7 +31,7 @@ public class PlaceAdapter extends ArrayAdapter<Place> {
             listItemView = LayoutInflater.from(getContext()).inflate(R.layout.list_item, parent, false);
         }
 
-        TextView textView = (TextView) listItemView.findViewById(R.id.text);
+        TextView textView = listItemView.findViewById(R.id.text);
         textView.setText(currentPlace.getTextOfPlace());
 
         ImageView imageView = (ImageView) listItemView.findViewById(R.id.image);

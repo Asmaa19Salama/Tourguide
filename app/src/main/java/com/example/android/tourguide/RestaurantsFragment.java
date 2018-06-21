@@ -5,10 +5,10 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
 import android.widget.ListView;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class RestaurantsFragment extends Fragment {
 
@@ -20,21 +20,15 @@ public class RestaurantsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.place_list, container, false);
-        final ArrayList<Place> placeInfo = new ArrayList<Place>();
+        final List<Place> placeInfo = new ArrayList<>();
 
-        placeInfo.add(new Place("When the sun shines on Stockholm there is nothing that beats enjoying a cup of coffee or having something to eat.",
+        placeInfo.add(new Place(getString(R.string.restaurants_text),
                 R.drawable.restaurants));
 
         PlaceAdapter adapters = new PlaceAdapter(getActivity(), placeInfo, R.color.pink);
         ListView listView = (ListView) rootView.findViewById(R.id.list);
         listView.setAdapter(adapters);
 
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Place place = placeInfo.get(i);
-            }
-        });
         return rootView;
     }
 }

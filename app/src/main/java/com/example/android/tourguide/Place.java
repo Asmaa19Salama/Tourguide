@@ -2,20 +2,20 @@ package com.example.android.tourguide;
 
 public class Place {
 
-    private String textOfPlace;
+    private String mTextOfPlace;
 
-    private int imageOfPlace;
+    private int mImageOfPlace;
 
     public Place(String textOfPlace, int imageOfPlace) {
-        this.textOfPlace = textOfPlace;
-        this.imageOfPlace = imageOfPlace;
+        mTextOfPlace = textOfPlace;
+        mImageOfPlace = imageOfPlace;
     }
 
     public String getTextOfPlace() {
-        return textOfPlace;
+        return mTextOfPlace;
     }
 
     public int getImageOfPlace() {
-        return imageOfPlace;
+        return mImageOfPlace;
     }
 }

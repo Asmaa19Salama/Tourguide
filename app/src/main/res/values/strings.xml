@@ -10,4 +10,12 @@
     <string name="restaurants">Open-air restaurants</string>
 
     <string name="vasa">Vasa museum</string>
+
+    <string name="boat_text">The fact that Stockholm is built on 14 beautiful islands connected by 57 bridges, makes a sightseeing tour by boat somewhat of a given.</string>
+
+    <string name="city_hall_text">The Stockholm City Hall is one of Sweden’s most famous buildings, and one of the capital's most visited tourist attractions. It is famous for its grand ceremonial halls and unique pieces of art.</string>
+
+    <string name="restaurants_text">When the sun shines on Stockholm there is nothing that beats enjoying a cup of coffee or having something to eat.</string>
+
+    <string name="vasa_text">One of the most famous and most visited museums in Stockholm is the Vasa Musuem, which is all about the Vasa ship which sunk off the coast of Stockholm in 1628.</string>
 </resources>
